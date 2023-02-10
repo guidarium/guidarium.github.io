@@ -69,8 +69,10 @@
   <script src="scripts.js" defer></script>
   <script src="main.js" type="module"></script>
   <script>
-    var _winHeight = document.body.scrollHeight;
-    window.parent.postMessage(_winHeight, "*");
+    window.addEventListener("load", function() {
+      var _winHeight = document.body.scrollHeight;
+      window.parent.postMessage(_winHeight, "*");
+    });
   </script>
 
 </body>
