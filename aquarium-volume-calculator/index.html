@@ -68,7 +68,11 @@
   <script src="polyfills.js" type="module"></script>
   <script src="scripts.js" defer></script>
   <script src="main.js" type="module"></script>
-  <script>window.parent.postMessage("resize", "*");</script>
+  <script>
+    var height = document.body.scrollHeight;
+    // Send the height to the parent page
+    window.parent.postMessage(height, "*");
+  </script>
 
 </body>
 
