@@ -70,8 +70,8 @@
   <script src="main.js" type="module"></script>
   <script>
     window.addEventListener("load", function() {
-      var _winHeight = document.body.scrollHeight;
-      window.parent.postMessage(_winHeight, "*");
+      var height = document.body.scrollHeight;
+      window.parent.postMessage(height, "*");
     });
   </script>
 
