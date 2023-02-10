@@ -69,9 +69,8 @@
   <script src="scripts.js" defer></script>
   <script src="main.js" type="module"></script>
   <script>
-    var height = document.body.scrollHeight;
-    // Send the height to the parent page
-    window.parent.postMessage(height, "*");
+    let winHeight = document.body.scrollHeight;
+    window.parent.postMessage(winHeight, "*");
   </script>
 
 </body>
